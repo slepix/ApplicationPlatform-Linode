@@ -1,0 +1,17 @@
+cluster:
+  name: appplatform
+  provider: linode
+  domainSuffix: yourdomain.tld
+otomi:
+  hasExternalDNS: true
+dns:
+  domainFilters: 
+    - yourdomain.tld
+  provider:
+    linode:
+      apiToken: token
+apps:
+  cert-manager:
+    issuer: letsencrypt
+    stage: production
+    email: admin@yourdomain

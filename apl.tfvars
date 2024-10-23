@@ -1,0 +1,5 @@
+linode_token = "YourLinodeToken"
+domain = "DomainForAPL"
+region = "nl-ams"
+k8s_version = "1.30"
+soaemail = "SoaEmail@domain.com"
