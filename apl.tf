@@ -10,6 +10,11 @@ resource "linode_lke_cluster" "appplatform" {
   pool {
     type  = "g6-standard-4"
     count = 3
+
+  autoscaler {
+    min = 3
+    max = 10
+    }
   }
 }
 
